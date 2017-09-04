@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="zavrsni@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="information_schema">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="mysql"/>
+    <schema id="4" parent="1" name="performance_schema"/>
+    <schema id="5" parent="1" name="test"/>
+    <schema id="6" parent="1" name="zavrsni">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="7" parent="6" name="aukcije"/>
+    <table id="8" parent="6" name="deals"/>
+    <table id="9" parent="6" name="item"/>
+    <table id="10" parent="6" name="lastupdate"/>
+    <table id="11" parent="6" name="newdeals"/>
+    <table id="12" parent="6" name="profit"/>
+    <routine id="13" parent="6" name="allpetids">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="14" parent="6" name="cheapest_pet_per_realm">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="15" parent="6" name="country_hos">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="16" parent="6" name="deloldprofit">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="17" parent="7" name="item">
+      <Position>1</Position>
+      <DataType>int(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="18" parent="7" name="owner">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="19" parent="7" name="realm">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="20" parent="7" name="bid">
+      <Position>4</Position>
+      <DataType>bigint(255) unsigned|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="21" parent="7" name="buyout">
+      <Position>5</Position>
+      <DataType>bigint(255) unsigned|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="22" parent="7" name="quantity">
+      <Position>6</Position>
+      <DataType>int(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="23" parent="7" name="cheaper">
+      <Position>7</Position>
+      <DataType>int(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="24" parent="7" name="id">
+      <Position>8</Position>
+      <DataType>int(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="25" parent="7" name="auc">
+      <Position>9</Position>
+      <DataType>bigint(255) unsigned|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="26" parent="7" name="date">
+      <Position>10</Position>
+      <DataType>datetime(6)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="27" parent="7" name="petSpeciesId">
+      <Position>11</Position>
+      <DataType>int(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="28" parent="7" name="petBreedId">
+      <Position>12</Position>
+      <DataType>int(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="29" parent="7" name="petLevel">
+      <Position>13</Position>
+      <DataType>int(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="30" parent="7" name="petQualityId">
+      <Position>14</Position>
+      <DataType>int(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="31" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="8" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="8" name="price">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="34" parent="8" name="avgprice">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="35" parent="8" name="lastseen">
+      <Position>4</Position>
+      <DataType>varchar(0)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="36" parent="8" name="server">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="37" parent="8" name="name">
+      <Position>6</Position>
+      <DataType>varchar(0)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="38" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>int(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="9" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="41" parent="9" name="petid">
+      <Position>3</Position>
+      <DataType>int(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="42" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id
+petid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="44" parent="10" name="server">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="45" parent="10" name="updatetime">
+      <Position>3</Position>
+      <DataType>datetime(6)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="46" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="47" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="11" name="price">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="49" parent="11" name="avgprice">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="50" parent="11" name="lastseen">
+      <Position>4</Position>
+      <DataType>varchar(0)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="51" parent="11" name="name">
+      <Position>5</Position>
+      <DataType>varchar(0)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="52" parent="11" name="server">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="53" parent="11" name="sname">
+      <Position>7</Position>
+      <DataType>varchar(0)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="54" parent="11" name="razlika">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <key id="55" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="56" parent="12" name="auction">
+      <Position>1</Position>
+      <DataType>bigint(255) unsigned|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="57" parent="12" name="minprofit">
+      <Position>2</Position>
+      <DataType>bigint(255) unsigned|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="58" parent="12" name="midprofit">
+      <Position>3</Position>
+      <DataType>bigint(255) unsigned|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="59" parent="12" name="maxprofit">
+      <Position>4</Position>
+      <DataType>bigint(255) unsigned|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <column id="60" parent="12" name="date">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+    </column>
+    <argument id="61" parent="14" name="con">
+      <DataType>bigint(20)|0</DataType>
+    </argument>
+    <argument id="62" parent="14" name="petname">
+      <DataType>varchar(100)|0</DataType>
+    </argument>
+    <argument id="63" parent="15" name="con">
+      <DataType>char(20)|0</DataType>
+    </argument>
+  </database-model>
+</dataSource>

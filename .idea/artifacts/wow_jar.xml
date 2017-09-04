@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="wow:jar">
+    <output-path>$PROJECT_DIR$/..</output-path>
+    <root id="archive" name="wow.jar">
+      <element id="module-output" name="test" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.32/mysql-connector-java-5.1.32.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/json/json/20160212/json-20160212.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.1/gson-2.8.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

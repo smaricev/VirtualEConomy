@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="809bf289-287b-49ca-b797-52d006f2c02f" name="moops" url="http://moops.ddns.net">
+        <fileTransfer host="moops.ddns.net" port="6922" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="6922" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

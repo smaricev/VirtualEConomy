@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/zavrsni</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping class="podatci.AukcijeEntity"/>
+        <mapping class="podatci.DealsEntity"/>
+        <mapping class="podatci.ItemEntity"/>
+        <mapping class="podatci.LastupdateEntity"/>
+        <mapping class="podatci.NewdealsEntity"/>
+        <mapping class="podatci.ProfitEntity"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
